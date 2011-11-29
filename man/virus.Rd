@@ -53,8 +53,6 @@ sum(virus$segments)
 # some neighbors repeat (others are missing)
 subset(virus, name \%like\% 'Dengue*')
 subset(virus, name \%like\% 'Monkey*')
-# list the neighbors (and exclude Genbank acc that RefSeq was derived from)
-ncbiGenome("Monkeypox virus[orgn]", neighbor=TRUE, derived=FALSE)
 
 ## most common phages
 table2(species(grep("phage", virus$name, value=TRUE)))

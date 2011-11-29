@@ -22,17 +22,16 @@ using genome_nuccore_samespecies (Other genomes for species) and genome_nuccore 
 \references{ A description of the Entrez programming utilities is at
   \url{http://eutils.ncbi.nlm.nih.gov/}. }
 \author{ Chris Stubben }
-\note{ Viral sequences typically have only one reference sequence per species in Entrez genome, and other
-  strains are linked as Genome Neighbors.  
+\note{ The script no longer works after the new Entrez Genome release on November 9, 2011 (see 
+url{http://www.ncbi.nlm.nih.gov/About/news/17Nov2011.html} for details).  Please install the 
+genomes development package for a fixed version (see the Vignette for instructions).
 }
 
 %\seealso{    }
 
 \examples{
  ncbiGenome('Nipah virus[orgn]')
- x<-ncbiGenome('Nipah virus[ORGN]', neighbors = TRUE)
- x[1:2,]
- summary(x)
+ 
 }
 
 \keyword{ methods }

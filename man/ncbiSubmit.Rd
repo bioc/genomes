@@ -26,7 +26,7 @@ JOURNAL line containing a submitted date, for example, \code{JOURNAL   Submitted
 }
 \examples{
 #Yersinia pestis in Genome database
-ncbiSubmit("Yersinia pestis CO92[ORGN]", db="genome")
+ncbiSubmit("Yersinia pestis CO92[ORGN] AND refseq[FILTER]")
 
 # Virus in nucleotide database
 ebola<- ncbiSubmit("Ebolavirus[ORGN] NOT gbdiv_pat[PROP] NOT refseq[FILTER]")
