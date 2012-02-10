@@ -15,17 +15,20 @@ enaProject(tax, limit = 1000, refseq = TRUE)
 \references{ \url{ http://www.ebi.ac.uk/ena/about/browser#taxonomy_portal_options } }
 \author{ Chris Stubben }
 \note{ URL strings at ENA require a taxonomy ID, so searching by name 
-uses a \code{\link{ncbiTaxonomy}} ID lookup at NCBI. 
+uses a \code{\link{ncbiTaxonomy}} ID lookup at NCBI.
+
+Due to recent changes in the XML output on Feb 2012, this function is not working.  Please check the development package for updates. 
 }
 
 
 \seealso{\code{\link{enaSRA} to search for SRA samples.}
 }
 \examples{
+\dontrun{
 pan<-enaProject(9596)
 head(pan)
 table(pan$type, pan$method)
-
+}
 
 }
 \keyword{ methods }

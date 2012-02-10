@@ -24,13 +24,14 @@ using genome_nuccore_samespecies (Other genomes for species) and genome_nuccore 
 \author{ Chris Stubben }
 \note{ The script no longer works after the new Entrez Genome release on November 9, 2011 (see 
 url{http://www.ncbi.nlm.nih.gov/About/news/17Nov2011.html} for details).  Please install the 
-genomes development package for a fixed version (see the Vignette for instructions).
+genomes development package for a fixed version.
 }
 
 %\seealso{    }
 
 \examples{
- ncbiGenome('Nipah virus[orgn]')
+\dontrun{
+ ncbiGenome('Nipah virus[orgn]') }
  
 }
 
