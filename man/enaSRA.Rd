@@ -20,6 +20,8 @@ uses a \code{\link{ncbiTaxonomy}} ID lookup. }
 \seealso{   See \code{\link{enaTaxonomy}}  to check the total number of SRAs before downloading}
 \examples{
 # chimps
+\dontrun{
+
 pan<-enaSRA(9596)   # or pan<-enaSRA("Pan")
 head(pan)
 nrow(pan)
@@ -27,7 +29,6 @@ table2(pan$center)
 bases(sum(pan$bases, na.rm=TRUE))
 bases(sum(pan$reads, na.rm=TRUE), round=1)
 
-\dontrun{
 # some taxonomy ID links are not working -- should be fixed in October 2012 ENA update
 # in the meantime add limit to avoid downloading default (500) records.
 # For example, 90 SRA samples from Cyanobacteria on Sep 14, 2012

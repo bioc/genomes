@@ -16,15 +16,19 @@ enaProject(tax, limit = 1000, refseq = TRUE)
 \author{ Chris Stubben }
 \note{ URL strings at ENA require a taxonomy ID, so searching by name 
 uses a \code{\link{ncbiTaxonomy}} ID lookup at NCBI. 
+
+This portal removed Feb 2013.  See devel branch for fixes.
+
 }
 
 
 \seealso{\code{\link{enaSRA} to search for SRA samples.}
 }
 \examples{
+\dontrun{
 pan<-enaProject(9596)
 pan
-
+}
 
 }
 \keyword{ methods }

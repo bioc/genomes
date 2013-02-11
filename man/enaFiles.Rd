@@ -20,7 +20,7 @@ enaFiles(acc, file = "submitted")
 \examples{
 
 enaFiles("ERP000141")
-enaFiles("ERP000141", "fastq")
+##enaFiles("ERP000141", "fastq")
 
 
 }

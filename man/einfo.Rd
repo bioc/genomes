@@ -21,7 +21,7 @@ einfo(db, links=FALSE)
 % \seealso{ }
 \examples{
 
-einfo()
+# einfo()   - not working Feb 2013
 einfo("bioproject")
 einfo("bioproject", TRUE)
 

@@ -22,11 +22,13 @@ enaTaxonomy(tax, h = TRUE, round = 0)
 
 \seealso{ \code{\link{ncbiTaxonomy}} }
 \examples{
+\dontrun{
 # COMPARE to http://www.ebi.ac.uk/ena/data/view/display=html&Taxon:2
 enaTaxonomy("Bacteria")
 # common names 
 enaTaxonomy("human")
 # root
 enaTaxonomy(1)
+}
 }
 \keyword{ methods }
