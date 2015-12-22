@@ -24,12 +24,12 @@ read.ptt(file)
 
 \seealso{\code{\link{read.ptt}} }
 \examples{
-
+\dontrun{
   file<-"ftp://ftp.ncbi.nih.gov/genomes/Bacteria/Yersinia_pestis_CO92_uid57621/NC_003143.ptt" 
   x <-read.ptt(file)
   x
   table2(substr(values(x)$cog, 1,7), n=6)
-
+}
 
 }
 \keyword{ file }

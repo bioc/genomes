@@ -28,11 +28,12 @@ The function is intended to load GFF files from NCBI only.  GFF files from other
 
 \seealso{ \code{\link{read.ncbi.ftp}}  }
 \examples{
+\dontrun{
  file<-"ftp://ftp.ncbi.nih.gov/genomes/Bacteria/Yersinia_pestis_CO92_uid57621/NC_003132.gff"
  x <-read.gff(file)
  x
 metadata(x)
- 
+ }
 
 
 }

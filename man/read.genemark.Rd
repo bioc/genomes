@@ -18,10 +18,11 @@ currently reads the HMM version 2.6 files only
 
 \seealso{ \code{\link{read.ncbi.ftp}}  }
 \examples{
-file <- "ftp://ftp.ncbi.nih.gov/genomes/Bacteria/Yersinia_pestis_CO92_uid57621/NC_003132.GeneMarkHMM-2.6r"
+\dontrun{
+  file <- "ftp://ftp.ncbi.nih.gov/genomes/Bacteria/Yersinia_pestis_CO92_uid57621/NC_003132.GeneMarkHMM-2.6r"
  x <-read.genemark(file)
  x
  metadata(x)
-
+ }
 }
 \keyword{ file }

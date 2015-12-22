@@ -23,11 +23,12 @@ read.glimmer(file)
 
 \seealso{ \code{\link{read.ncbi.ftp}}  }
 \examples{
+\dontrun{
  file<-"ftp://ftp.ncbi.nih.gov/genomes/Bacteria/Yersinia_pestis_CO92_uid57621/NC_003132.Glimmer3" 
  x <-read.glimmer(file)
  x
  metadata(x)
  table(values(x)$frame)
-
+}
 }
 \keyword{ file }

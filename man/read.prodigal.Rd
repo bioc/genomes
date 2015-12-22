@@ -34,7 +34,7 @@ Tennessee and Oak Ridge National Laboratory.  See \url{http://prodigal.ornl.gov}
 
 \seealso{ \code{\link{read.ncbi.ftp}} }
 \examples{
-
+\dontrun{
  file<-"ftp://ftp.ncbi.nih.gov/genomes/Bacteria/Yersinia_pestis_CO92_uid57621/NC_003143.Prodigal-2.50" 
  x <-read.prodigal(file)
  x
@@ -42,5 +42,6 @@ Tennessee and Oak Ridge National Laboratory.  See \url{http://prodigal.ornl.gov}
  table2(values(x)$start_type)
  table2(values(x)$rbs_motif)
  hist(values(x)$sscore, br=40, col="blue", main="", xlab="Start score")
+}
 }
 \keyword{ file }
